@@ -126,8 +126,7 @@ typedef enum Type {
 
 typedef struct Shape {
 	Type type; // shape type
-	union // shape initialisation data
-	{
+	union { // shape initialisation data
 		Rect_data r; // for Rect
 		Circle_data c; // for Circle
 	} init_data;

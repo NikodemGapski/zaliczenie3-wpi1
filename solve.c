@@ -200,5 +200,6 @@ int main() {
 		input_vector(&p);
 		printf("%d\n", calculate_query(k - 1, p, shapes));
 	}
+	free(shapes);
 	return 0;
 }
